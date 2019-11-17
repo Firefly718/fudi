@@ -1,0 +1,98 @@
+@import'variables';
+@import'normalize';
+@import'mixins';
+@import'slider';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100%;
+    @include text($title-color,$text-font, 1.6rem, 400);
+    background-image: url(/img/main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 96%;
+}
+/*__________________________________-HEADER-______________________________________*/
+header {
+    max-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 120px;
+    }
+}
+
+.menu {
+    &__link {
+    padding-left: 28px;
+    @include text($title-color, $text-font, 1.4rem/3rem, 700);
+        // & {
+        //     // @include tr();
+        //     //     &:hover,
+        //     //     &:focus,
+        //     //     &:active {
+        //     //         transform: scale(2);
+        //     //     }
+        // } 
+    }
+}
+
+/* title */
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    &__text {
+        @include text($title-color, $title-font, 3.6rem, 700);
+        opacity: .7;
+        font-style: italic;
+        letter-spacing: 2px;
+        margin: 26.5rem 0 0 0;
+    }
+    &__main {
+        @include text($title-color, $text-font, 10rem, 700);
+        letter-spacing: 5px;
+        margin: 0;
+    }
+    &__btn {
+        @include text($title-color, $text-font, 1.8rem, 700);
+        border: 3px solid #fff;
+        border-radius: 5px;
+        width: 274px;
+        margin-bottom: 34px;
+        text-decoration: none;
+    }
+    &__subtitle {
+        @include text($title-color, $text-font, 1.4rem, 400);
+        margin-bottom: 240px;
+    
+        & a {
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        text-decoration: underline;
+        padding-left: 8px;
+        }
+    }
+}
+
+
