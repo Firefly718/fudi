@@ -15,10 +15,7 @@ html {
 body {
     min-height: 100%;
     @include text($title-color,$text-font, 1.6rem, 400);
-    background-image: url(/img/main.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: orange;
 }
 
 .container {
@@ -28,7 +25,9 @@ body {
 }
 /*__________________________________-HEADER-______________________________________*/
 header {
-    max-height: 100vh;
+    max-height: 880px;
+    background-image: url(/img/main.png);
+    @include bgCenter;
 }
 
 .nav {
@@ -44,14 +43,6 @@ header {
     &__link {
     padding-left: 28px;
     @include text($title-color, $text-font, 1.4rem/3rem, 700);
-        // & {
-        //     // @include tr();
-        //     //     &:hover,
-        //     //     &:focus,
-        //     //     &:active {
-        //     //         transform: scale(2);
-        //     //     }
-        // } 
     }
 }
 
@@ -94,5 +85,66 @@ header {
         }
     }
 }
-
-
+// ____________________________________________F-I-R-S-T____S-E-C-T-I-O-N_____________________________________________
+.about {
+    min-height: 440px;
+    background-color: #fff;
+    &__items {
+        display: flex;
+        text-align: center;
+        padding-top: 82px;
+    }
+    &__item {
+        width: 364px;
+        color: #000;
+    }
+    &__hamburger {
+        background-image: url(/img/hamburger.png);
+        margin: 18px auto;
+        @include iconCenter;
+    }
+    &__money {
+        background-image: url(/img/money.png);
+        margin: 18px auto;
+        @include iconCenter;
+    }
+    &__cheef {
+        background-image: url(/img/cheef.png);
+        margin: 18px auto;
+        @include iconCenter;
+    }
+    span {
+        font-weight: bold;
+        &::after{
+            content: '';
+            display: block;
+            width: 17%;
+            padding: 2px;
+            border-bottom: 1px solid $brand-color;
+            margin: 0 auto;        }
+    }
+    p {
+        font-weight: 300;
+        padding-bottom: 90px;
+    }
+}
+// ____________________________________________S-E-C-O-N-D____S-E-C-T-I-O-N___________________________________________
+.app {
+    min-height: 880px;
+    background-color: #f7f7f7; 
+}
+// ____________________________________________T-H-I-R-D____S-E-C-T-I-O-N_____________________________________________
+.view {
+    min-height: 460px;
+    background-color: #493949;
+}
+// ____________________________________________F-O-U-R-T-H____S-E-C-T-I-O-N__________________________________________
+.cuisines {
+    min-height: 794px;
+    background-color: #fff;
+}
+// ____________________________________________F-O-O-T-E-R___________________________________________________________
+footer {
+    min-height: 92px;
+    background-color: #f7f7f7;
+}
