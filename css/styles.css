@@ -617,7 +617,86 @@ header {
 
 .cuisines {
   min-height: 794px;
-  background-color: #fff; }
+  background-color: #fff;
+  text-align: center;
+  padding-top: 100px; }
+  .cuisines span {
+    font-weight: bold; }
+    .cuisines span::after {
+      content: '';
+      display: block;
+      width: 5%;
+      padding-top: 2px;
+      border-bottom: 2px solid salmon;
+      margin: 0 0 0 48%; }
+  .cuisines__choise {
+    height: 444px;
+    width: 100%;
+    margin-top: 38px; }
+  .cuisines__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .cuisines__italian {
+    background-image: url(/img/italian.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__indian {
+    background-image: url(/img/indian.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__french {
+    background-image: url(/img/french.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__steakhouse {
+    background-image: url(/img/steakhouse.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__seafood {
+    background-image: url(/img/seafood.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__sushi {
+    background-image: url(/img/sushi.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__mexican {
+    background-image: url(/img/mexican.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__chinese {
+    background-image: url(/img/chinese.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__pizza {
+    background-image: url(/img/american.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .cuisines__american {
+    background-image: url(/img/pizza.png);
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 footer {
   min-height: 92px;

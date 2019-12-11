@@ -41,3 +41,10 @@
     width: 60px;
     height: 60px;
 }
+
+@mixin imgSize {
+    height: 224px;
+    width: calc(100vw/5);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

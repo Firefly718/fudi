@@ -223,6 +223,68 @@ header {
 .cuisines {
     min-height: 794px;
     background-color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    span {
+        font-weight: bold;
+            &::after{
+                content: '';
+                display: block;
+                width: 5%;
+                padding-top: 2px;
+                border-bottom: 2px solid $brand-color;
+                margin: 0 0 0 48%;
+            }
+    }
+    &__choise {
+        height: 444px;
+        width: 100%;
+        margin-top: 38px;
+    }
+    &__line {
+        display: flex;
+        // justify-content: space-between;
+    }
+    &__italian {
+        background-image: url(/img/italian.png);
+        @include imgSize;
+    }
+    &__indian  {
+        background-image: url(/img/indian.png);
+        @include imgSize;
+    }
+    &__french {
+        background-image: url(/img/french.png);
+        @include imgSize;
+    }
+    &__steakhouse {
+        background-image: url(/img/steakhouse.png);
+        @include imgSize;
+    }
+    &__seafood {
+        background-image: url(/img/seafood.png);
+        @include imgSize;
+    }
+    &__sushi {
+        background-image: url(/img/sushi.png);
+        @include imgSize;
+    }
+    &__mexican {
+        background-image: url(/img/mexican.png);
+        @include imgSize;
+    }
+    &__chinese {
+        background-image: url(/img/chinese.png);
+        @include imgSize;
+    }
+    &__pizza {
+        background-image: url(/img/american.png);
+        @include imgSize;
+    }
+    &__american {
+        background-image: url(/img/pizza.png);
+        @include imgSize;
+    }
 }
 // ____________________________________________F-O-O-T-E-R___________________________________________________________
 footer {
