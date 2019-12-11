@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:250,300,400,400i,700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -392,7 +392,8 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  background-color: orange; }
+  background-color: orange;
+  color: #000; }
 
 .container {
   margin: 0 auto;
@@ -542,10 +543,77 @@ header {
 .app {
   min-height: 880px;
   background-color: #f7f7f7; }
+  .app__phone {
+    background-image: url(/img/phone.png);
+    height: 780px;
+    width: 40%;
+    margin-top: 17.7%;
+    margin-right: 100px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .app__about {
+    padding-top: 25%;
+    margin-left: 100px; }
+    .app__about span {
+      font-weight: bold; }
+      .app__about span::after {
+        content: '';
+        display: block;
+        width: 6.5%;
+        padding: 2px;
+        border-bottom: 2px solid salmon;
+        margin: 0 0 0 44%; }
+  .app__stores {
+    height: 38px;
+    margin-left: 43.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .app__store {
+    background-image: url(/img/Layer_3.png);
+    height: 38px;
+    width: 160px;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .app__store--google {
+      background-image: url(/img/Layer_4.png);
+      height: 38px;
+      background-repeat: no-repeat;
+      width: 100%;
+      cursor: pointer; }
 
 .view {
   min-height: 460px;
-  background-color: #493949; }
+  background-image: url(/img/bg_vegetables.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #493949;
+  color: white;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.6rem; }
+  .view__commentator {
+    padding-top: 80px; }
+  .view img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #948b94;
+    margin: 0 auto; }
+  .view p {
+    width: 940px;
+    margin: 0 auto;
+    padding: 26px auto; }
+  .view span {
+    width: 940px;
+    margin: 0 auto;
+    font-size: 1.7rem; }
+    .view span::before {
+      content: " - "; }
+    .view span::after {
+      content: " - "; }
 
 .cuisines {
   min-height: 794px;

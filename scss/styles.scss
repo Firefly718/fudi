@@ -16,6 +16,7 @@ body {
     min-height: 100%;
     @include text($title-color,$text-font, 1.6rem, 400);
     background-color: orange;
+    color: #000;
 }
 
 .container {
@@ -121,7 +122,8 @@ header {
             width: 17%;
             padding: 2px;
             border-bottom: 1px solid $brand-color;
-            margin: 0 auto;        }
+            margin: 0 auto;
+        }
     }
     p {
         font-weight: 300;
@@ -132,11 +134,90 @@ header {
 .app {
     min-height: 880px;
     background-color: #f7f7f7; 
+    &__phone {
+        background-image: url(/img/phone.png);
+        height: 780px;
+        width: 40%;
+        margin-top: 17.7%;
+        margin-right: 100px;
+        float: left;
+        // background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__about {
+        padding-top: 25%;
+        margin-left: 100px;
+        span {
+            font-weight: bold;
+            &::after{
+                content: '';
+                display: block;
+                width: 6.5%;
+                padding: 2px;
+                border-bottom: 2px solid $brand-color;
+                margin: 0 0 0 44%;
+            }
+        }
+    }
+    &__stores {
+        height: 38px;
+        margin-left: 43.5%;
+        display: flex;
+    }
+    &__store {
+        background-image: url(/img/Layer_3.png);
+        height: 38px;
+        width: 160px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &--google {
+            background-image: url(/img/Layer_4.png);
+            height: 38px;
+            background-repeat: no-repeat;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
 }
 // ____________________________________________T-H-I-R-D____S-E-C-T-I-O-N_____________________________________________
 .view {
     min-height: 460px;
+    background-image: url(/img/bg_vegetables.png);
+    background-position: center;
+    background-repeat: no-repeat;    
     background-color: #493949;
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.6rem;
+    &__commentator {
+        padding-top: 80px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #948b94;
+        margin: 0 auto;
+    }
+    p {
+        width: 940px;
+        margin: 0 auto;
+        padding: 26px auto;
+    }
+    span {
+        width: 940px;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        &::before {
+            content: " - ";
+        }
+        &::after {
+            content: " - ";
+        }
+    }
 }
 // ____________________________________________F-O-U-R-T-H____S-E-C-T-I-O-N__________________________________________
 .cuisines {
