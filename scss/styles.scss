@@ -301,53 +301,72 @@ header {
             }
     }
     &__choise {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         height: 444px;
         width: 100%;
         margin-top: 38px;
     }
-    &__line {
-        display: flex;
-        // justify-content: space-between;
-    }
     &__italian {
         background-image: url(/img/italian.png);
-        @include imgSize;
+        // @include imgSize;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
     &__indian  {
         background-image: url(/img/indian.png);
-        @include imgSize;
+        // @include imgSize;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
     }
     &__french {
         background-image: url(/img/french.png);
-        @include imgSize;
+        // @include imgSize;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
     }
     &__steakhouse {
         background-image: url(/img/steakhouse.png);
-        @include imgSize;
+        // @include imgSize;
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
     }
     &__seafood {
         background-image: url(/img/seafood.png);
-        @include imgSize;
+        // @include imgSize;
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
     }
     &__sushi {
         background-image: url(/img/sushi.png);
-        @include imgSize;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        // @include imgSize;
     }
     &__mexican {
         background-image: url(/img/mexican.png);
-        @include imgSize;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        // @include imgSize;
     }
     &__chinese {
         background-image: url(/img/chinese.png);
-        @include imgSize;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        // @include imgSize;
     }
     &__pizza {
         background-image: url(/img/american.png);
-        @include imgSize;
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        // @include imgSize;
     }
     &__american {
         background-image: url(/img/pizza.png);
-        @include imgSize;
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+        // @include imgSize;
     }
 }
 // ____________________________________________F-O-O-T-E-R___________________________________________________________
