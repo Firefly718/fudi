@@ -500,7 +500,7 @@ header {
     width: 364px;
     color: #000; }
   .about__hamburger {
-    background-image: url(/img/hamburger.png);
+    background-image: url(../img/hamburger.png);
     margin: 18px auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -510,7 +510,7 @@ header {
     width: 60px;
     height: 60px; }
   .about__money {
-    background-image: url(/img/money.png);
+    background-image: url(../img/money.png);
     margin: 18px auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -520,7 +520,7 @@ header {
     width: 60px;
     height: 60px; }
   .about__cheef {
-    background-image: url(/img/cheef.png);
+    background-image: url(../img/cheef.png);
     margin: 18px auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -546,7 +546,7 @@ header {
   min-height: 880px;
   background-color: #f7f7f7; }
   .app__phone {
-    background-image: url(/img/phone.png);
+    background-image: url(../img/phone.png);
     height: 780px;
     width: 40%;
     margin-top: 17.6%;
@@ -574,13 +574,13 @@ header {
     display: -ms-flexbox;
     display: flex; }
   .app__store {
-    background-image: url(/img/Layer_3.png);
+    background-image: url(../img/Layer_3.png);
     height: 38px;
     width: 160px;
     background-repeat: no-repeat;
     cursor: pointer; }
     .app__store--google {
-      background-image: url(/img/Layer_4.png);
+      background-image: url(../img/Layer_4.png);
       height: 38px;
       background-repeat: no-repeat;
       width: 100%;
@@ -588,7 +588,7 @@ header {
 
 .view {
   min-height: 460px;
-  background-image: url(/img/bg_vegetables.png);
+  background-image: url(../img/bg_vegetables.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -721,52 +721,52 @@ header {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .cuisines__italian {
-    background-image: url(/img/italian.png);
+    background-image: url(../img/italian.png);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     position: relative; }
   .cuisines__indian {
-    background-image: url(/img/indian.png);
+    background-image: url(../img/indian.png);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     position: relative; }
   .cuisines__french {
-    background-image: url(/img/french.png);
+    background-image: url(../img/french.png);
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     position: relative; }
   .cuisines__steakhouse {
-    background-image: url(/img/steakhouse.png);
+    background-image: url(../img/steakhouse.png);
     grid-column: 4 / 5;
     grid-row: 1 / 2;
     position: relative; }
   .cuisines__seafood {
-    background-image: url(/img/seafood.png);
+    background-image: url(../img/seafood.png);
     grid-column: 5 / 6;
     grid-row: 1 / 2;
     position: relative; }
   .cuisines__sushi {
-    background-image: url(/img/sushi.png);
+    background-image: url(../img/sushi.png);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     position: relative; }
   .cuisines__mexican {
-    background-image: url(/img/mexican.png);
+    background-image: url(../img/mexican.png);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     position: relative; }
   .cuisines__chinese {
-    background-image: url(/img/chinese.png);
+    background-image: url(../img/chinese.png);
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     position: relative; }
   .cuisines__pizza {
-    background-image: url(/img/american.png);
+    background-image: url(../img/american.png);
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     position: relative; }
   .cuisines__american {
-    background-image: url(/img/pizza.png);
+    background-image: url(../img/pizza.png);
     grid-column: 5 / 6;
     grid-row: 2 / 3;
     position: relative; }
