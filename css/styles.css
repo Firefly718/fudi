@@ -404,7 +404,7 @@ body {
 /*__________________________________-HEADER-______________________________________*/
 header {
   max-height: 880px;
-  background-image: url(/img/main.png);
+  background-image: url(../img/main.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
