@@ -46,6 +46,7 @@ header {
     &__link {
     padding-left: 28px;
     @include text($title-color, $text-font, 1.4rem/3rem, 700);
+    text-decoration: none;
     }
 }
 
@@ -136,16 +137,21 @@ header {
 .app {
     min-height: 880px;
     background-color: #f7f7f7; 
+    // overflow: hidden;
+    // position: relative;
     &__phone {
         background-image: url(/img/phone.png);
         height: 780px;
         width: 40%;
-        margin-top: 17.7%;
+        margin-top: 17.6%;
         margin-right: 100px;
         float: left;
         // background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        top: 0%;
+        // position: absolute;
+        // z-index: 0;
     }
     &__about {
         padding-top: 25%;
@@ -291,9 +297,10 @@ header {
     padding-top: 100px;
     .span-title {
         font-weight: bold;
+        // outline: 2px dashed green;
             &::after{
                 content: '';
-                display: inline-block;
+                display: block;
                 width: 5%;
                 padding-top: 2px;
                 border-bottom: 2px solid $brand-color;
