@@ -411,6 +411,8 @@ header {
         justify-content: space-between;
         // align-items: center;
         align-content: center;
+        padding: 0;
+        margin: 0;
     }
     // &__item {
     //     // align-self: center;
@@ -437,4 +439,37 @@ header {
 footer {
     min-height: 92px;
     background-color: #f7f7f7;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    // align-content: center;
+    // outline: 2px dashed green;
+    padding-top: 3%;
+    &__link {
+        text-decoration: none;
+        color: #8b8b8b;
+        font-size: 1.4rem;
+        align-self: center;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        &--second {
+            color: #8b8b8b;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            letter-spacing: 3px;
+            &::after{
+                content: ' WWW.BEKADES.COM';
+                color: #000;
+                font-weight: bold;
+                // display: block;
+                // width: 17%;
+                // padding: 2px;
+                // border-bottom: 1px solid $brand-color;
+                // margin: 0 auto;
+            }
+        }
+    }
 }
