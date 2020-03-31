@@ -711,12 +711,13 @@ header {
     text-decoration: none;
     color: #fff;
     position: absolute;
+    position: absolute;
     top: 50%;
-    right: 25%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .cuisines__italian {
     background-image: url(/img/italian.png);
     grid-column: 1 / 2;
@@ -725,39 +726,74 @@ header {
   .cuisines__indian {
     background-image: url(/img/indian.png);
     grid-column: 2 / 3;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    position: relative; }
   .cuisines__french {
     background-image: url(/img/french.png);
     grid-column: 3 / 4;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    position: relative; }
   .cuisines__steakhouse {
     background-image: url(/img/steakhouse.png);
     grid-column: 4 / 5;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    position: relative; }
   .cuisines__seafood {
     background-image: url(/img/seafood.png);
     grid-column: 5 / 6;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    position: relative; }
   .cuisines__sushi {
     background-image: url(/img/sushi.png);
     grid-column: 1 / 2;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    position: relative; }
   .cuisines__mexican {
     background-image: url(/img/mexican.png);
     grid-column: 2 / 3;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    position: relative; }
   .cuisines__chinese {
     background-image: url(/img/chinese.png);
     grid-column: 3 / 4;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    position: relative; }
   .cuisines__pizza {
     background-image: url(/img/american.png);
     grid-column: 4 / 5;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    position: relative; }
   .cuisines__american {
     background-image: url(/img/pizza.png);
     grid-column: 5 / 6;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    position: relative; }
+
+.stat {
+  margin-top: 6rem; }
+  .stat__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .stat__num {
+    font-weight: bold;
+    font-family: serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    line-height: 3rem; }
+  .stat__text {
+    font-weight: 300;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8rem; }
 
 footer {
   min-height: 92px;

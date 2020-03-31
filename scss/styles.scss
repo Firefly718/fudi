@@ -328,72 +328,111 @@ header {
         text-decoration: none;
         color: #fff;
         position: absolute;
-        top: 50%;
-        right: 25%;
-        transform: translateY(-50%);
+        @include posCenter;
     }
     &__italian {
         background-image: url(/img/italian.png);
         // @include imgSize;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        position: relative;
+        position: relative;        
     }
     &__indian  {
         background-image: url(/img/indian.png);
         // @include imgSize;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        position: relative;        
     }
     &__french {
         background-image: url(/img/french.png);
         // @include imgSize;
         grid-column: 3 / 4;
         grid-row: 1 / 2;
+        position: relative;
     }
     &__steakhouse {
         background-image: url(/img/steakhouse.png);
         // @include imgSize;
         grid-column: 4 / 5;
         grid-row: 1 / 2;
+        position: relative;
     }
     &__seafood {
         background-image: url(/img/seafood.png);
         // @include imgSize;
         grid-column: 5 / 6;
         grid-row: 1 / 2;
+        position: relative;
     }
     &__sushi {
         background-image: url(/img/sushi.png);
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        position: relative;
         // @include imgSize;
     }
     &__mexican {
         background-image: url(/img/mexican.png);
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        position: relative;
         // @include imgSize;
     }
     &__chinese {
         background-image: url(/img/chinese.png);
         grid-column: 3 / 4;
         grid-row: 2 / 3;
+        position: relative;
         // @include imgSize;
     }
     &__pizza {
         background-image: url(/img/american.png);
         grid-column: 4 / 5;
         grid-row: 2 / 3;
+        position: relative;
         // @include imgSize;
     }
     &__american {
         background-image: url(/img/pizza.png);
         grid-column: 5 / 6;
         grid-row: 2 / 3;
+        position: relative;
         // @include imgSize;
     }
 }
+// ____________________________________________S-T-A-T___________________________________________________________
+.stat {
+    // outline: 2px solid green;
+    margin-top: 6rem;
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        align-content: center;
+    }
+    // &__item {
+    //     // align-self: center;
+    // }
+    &__num {
+        font-weight: bold;
+        font-family: serif;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        display: block;
+        font-size: 3.6rem;
+        letter-spacing: 2px;
+        line-height: 3rem;
+    }
+    &__text {
+        font-weight: 300;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+}
+
+
 // ____________________________________________F-O-O-T-E-R___________________________________________________________
 footer {
     min-height: 92px;
