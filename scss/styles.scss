@@ -30,7 +30,7 @@ body {
 header {
     max-height: 880px;
     // width: 100%;
-    background-image: inline("img/main.png");
+    background: resolve(main.png);
     @include bgCenter;
 }
 
