@@ -29,7 +29,7 @@ body {
 /*__________________________________-HEADER-______________________________________*/
 header {
     max-height: 880px;
-    background: url(./img/main.png);
+    background-image: url("/img/main.png");
     @include bgCenter;
 }
 
