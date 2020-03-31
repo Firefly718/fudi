@@ -29,8 +29,8 @@ body {
 /*__________________________________-HEADER-______________________________________*/
 header {
     max-height: 880px;
-    width: 100%;
-    background-image: url("/img/main.png");
+    // width: 100%;
+    background-image: inline("img/main.png");
     @include bgCenter;
 }
 
