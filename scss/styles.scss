@@ -220,20 +220,44 @@ header {
     &__stores {
         height: 38px;
         margin-left: 43.5%;
+        width: 270px;
         display: flex;
+        // justify-content: space-between;
+        // outline: 2px dashed green;
+        // outline: 2px dashed orange;
     }
     &__store {
         background-image: url(../img/Layer_3.png);
         height: 38px;
-        width: 160px;
+        width: 140px;
         background-repeat: no-repeat;
+        // display: inline-block;
+        padding-right: 114px;
         cursor: pointer;
+        @include tr();
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: inset 0px 0px 0px 2px rgba(63, 63, 63, 0.75);
+                border-radius: 8%;
+                background-color: greenyellow;
+            }
         &--google {
             background-image: url(../img/Layer_4.png);
             height: 38px;
             background-repeat: no-repeat;
             width: 100%;
             cursor: pointer;
+            margin-left: 10px;
+            // display: inline-block;
+            @include tr();
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: inset 0px 0px 0px 2px rgba(63, 63, 63, 0.75);
+                border-radius: 8%;
+                background-color: greenyellow;
+            }
         }
     }
 }
