@@ -285,6 +285,12 @@ header {
         border-radius: 50%;
         margin: 0 auto;
         border: 4px solid #948b94;
+        @include tr();
+            &:hover,
+            &:focus,
+            &:active {
+                border: 4px solid pink;
+            }
     }
 
     blockquote, .span-title {
@@ -415,7 +421,7 @@ header {
         // @include imgSize;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        position: relative;        
+        position: relative;
     }
     &__indian  {
         background-image: url(../img/indian.png);
@@ -544,11 +550,7 @@ footer {
                 content: ' WWW.BEKADES.COM';
                 color: #000;
                 font-weight: bold;
-                // display: block;
-                // width: 17%;
-                // padding: 2px;
-                // border-bottom: 1px solid $brand-color;
-                // margin: 0 auto;
+                display: inline-block;
             }
         }
     }

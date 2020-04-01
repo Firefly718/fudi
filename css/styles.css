@@ -681,7 +681,12 @@ header {
     width: 10rem;
     border-radius: 50%;
     margin: 0 auto;
-    border: 4px solid #948b94; }
+    border: 4px solid #948b94;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in; }
+    .view__commentator:hover, .view__commentator:focus, .view__commentator:active {
+      border: 4px solid pink; }
   .view blockquote, .view .span-title {
     opacity: .5;
     font-weight: 250; }
@@ -904,4 +909,5 @@ footer {
       .bottom__link--second::after {
         content: ' WWW.BEKADES.COM';
         color: #000;
-        font-weight: bold; }
+        font-weight: bold;
+        display: inline-block; }
