@@ -19,6 +19,7 @@ body {
     @include text($title-color,$text-font, 1.6rem, 400);
     background-color: orange;
     color: #000;
+    overflow-x: hidden;
 }
 
 .container {
@@ -285,6 +286,7 @@ header {
         border-radius: 50%;
         margin: 0 auto;
         border: 4px solid #948b94;
+        display: block;
         @include tr();
             &:hover,
             &:focus,
@@ -392,6 +394,12 @@ header {
         font-style: italic;
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.5rem;
+        // padding: 30px;
+        &:hover,
+        &:focus,
+        &:active {
+            color: black;
+        }
         &--bold {
             display: block;
             font-weight: bold;
@@ -415,20 +423,47 @@ header {
         color: #fff;
         position: absolute;
         @include posCenter;
+        padding: 77px 59px;
+        // padding: 30%;
+        &:hover,
+        &:focus,
+        &:active {
+            color: black;
+        }
     }
     &__italian {
         background-image: url(../img/italian.png);
-        // @include imgSize;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         position: relative;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/italianFlag.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            // transition: ease-in;
+            transition: all .3s linear;
+        }
     }
     &__indian  {
         background-image: url(../img/indian.png);
         // @include imgSize;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        position: relative;        
+        position: relative;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/indianFlag.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }     
     }
     &__french {
         background-image: url(../img/french.png);
@@ -436,6 +471,16 @@ header {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         position: relative;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/frenchFlag.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__steakhouse {
         background-image: url(../img/steakhouse.png);
@@ -443,6 +488,16 @@ header {
         grid-column: 4 / 5;
         grid-row: 1 / 2;
         position: relative;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/steakhouseFlag.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__seafood {
         background-image: url(../img/seafood.png);
@@ -450,41 +505,96 @@ header {
         grid-column: 5 / 6;
         grid-row: 1 / 2;
         position: relative;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/seafoodFlag.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__sushi {
         background-image: url(../img/sushi.png);
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         position: relative;
-        // @include imgSize;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/japanFlag.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__mexican {
         background-image: url(../img/mexican.png);
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         position: relative;
-        // @include imgSize;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/mexicanFlag.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__chinese {
         background-image: url(../img/chinese.png);
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         position: relative;
-        // @include imgSize;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/chineseFlag.jpeg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__pizza {
         background-image: url(../img/american.png);
         grid-column: 4 / 5;
         grid-row: 2 / 3;
         position: relative;
-        // @include imgSize;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/pizzaFlag.svg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
     &__american {
         background-image: url(../img/pizza.png);
         grid-column: 5 / 6;
         grid-row: 2 / 3;
         position: relative;
-        // @include imgSize;
+        transition: all .3s linear;
+        &:hover,
+        &:focus,
+        &:active {
+            background-image: url(../img/flags/americanFlag.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 4px dashed gray;
+            transition: all .3s linear;
+        }
     }
 }
 // ____________________________________________S-T-A-T___________________________________________________________

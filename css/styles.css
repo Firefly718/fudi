@@ -394,7 +394,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   background-color: orange;
-  color: #000; }
+  color: #000;
+  overflow-x: hidden; }
 
 .container {
   margin: 0 auto;
@@ -682,6 +683,7 @@ header {
     border-radius: 50%;
     margin: 0 auto;
     border: 4px solid #948b94;
+    display: block;
     -webkit-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
     transition: all .4s ease-in; }
@@ -774,6 +776,8 @@ header {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem; }
+    .cuisines__text:hover, .cuisines__text:focus, .cuisines__text:active {
+      color: black; }
     .cuisines__text--bold {
       display: block;
       font-weight: bold;
@@ -799,57 +803,170 @@ header {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    padding: 77px 59px; }
+    .cuisines__choise a:hover, .cuisines__choise a:focus, .cuisines__choise a:active {
+      color: black; }
   .cuisines__italian {
     background-image: url(../img/italian.png);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__italian:hover, .cuisines__italian:focus, .cuisines__italian:active {
+      background-image: url(../img/flags/italianFlag.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__indian {
     background-image: url(../img/indian.png);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__indian:hover, .cuisines__indian:focus, .cuisines__indian:active {
+      background-image: url(../img/flags/indianFlag.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__french {
     background-image: url(../img/french.png);
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__french:hover, .cuisines__french:focus, .cuisines__french:active {
+      background-image: url(../img/flags/frenchFlag.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__steakhouse {
     background-image: url(../img/steakhouse.png);
     grid-column: 4 / 5;
     grid-row: 1 / 2;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__steakhouse:hover, .cuisines__steakhouse:focus, .cuisines__steakhouse:active {
+      background-image: url(../img/flags/steakhouseFlag.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__seafood {
     background-image: url(../img/seafood.png);
     grid-column: 5 / 6;
     grid-row: 1 / 2;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__seafood:hover, .cuisines__seafood:focus, .cuisines__seafood:active {
+      background-image: url(../img/flags/seafoodFlag.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__sushi {
     background-image: url(../img/sushi.png);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__sushi:hover, .cuisines__sushi:focus, .cuisines__sushi:active {
+      background-image: url(../img/flags/japanFlag.webp);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__mexican {
     background-image: url(../img/mexican.png);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__mexican:hover, .cuisines__mexican:focus, .cuisines__mexican:active {
+      background-image: url(../img/flags/mexicanFlag.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__chinese {
     background-image: url(../img/chinese.png);
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__chinese:hover, .cuisines__chinese:focus, .cuisines__chinese:active {
+      background-image: url(../img/flags/chineseFlag.jpeg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__pizza {
     background-image: url(../img/american.png);
     grid-column: 4 / 5;
     grid-row: 2 / 3;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__pizza:hover, .cuisines__pizza:focus, .cuisines__pizza:active {
+      background-image: url(../img/flags/pizzaFlag.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
   .cuisines__american {
     background-image: url(../img/pizza.png);
     grid-column: 5 / 6;
     grid-row: 2 / 3;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .cuisines__american:hover, .cuisines__american:focus, .cuisines__american:active {
+      background-image: url(../img/flags/americanFlag.webp);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 4px dashed gray;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
 
 .stat {
   margin-top: 6rem; }
