@@ -32,6 +32,9 @@ body {
     @media screen and (max-width: 1024px) {
         width: 90%;
     }
+    @media screen and (max-width: 768px) {
+        width: 85%;
+    }
 }
 /*__________________________________-HEADER-______________________________________*/
 header {
@@ -46,6 +49,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // @media screen and (max-width: 768px) {
+    //     justify-content: space-around;
+    // }
     &__logo {
         width: 120px;
         @include tr();
@@ -64,11 +70,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // outline: 2px dashed yellow;
+    @media screen and (max-width: 768px) {
+        width: 30%;
+    }
     &__link {
     @include text($title-color, $text-font, 1.4rem/3rem, 700);
     text-decoration: none;
     display: inline-block;
- 
     &--burger{
         @include text($title-color, $text-font, 1.4rem/3rem, 700);
         text-decoration: none;
@@ -99,17 +108,27 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        height: 500px;
+    }
     &__text {
         @include text($title-color, $title-font, 3.6rem, 700);
         opacity: .7;
         font-style: italic;
         letter-spacing: 2px;
         margin: 26.5rem 0 0 0;
+        @media screen and (max-width: 768px) {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
     }
     &__main {
         @include text($title-color, $text-font, 10rem, 700);
         letter-spacing: 5px;
         margin: 0;
+        @media screen and (max-width: 768px) {
+            font-size: 8rem;
+        }
     }
     &__btn {
         @include text($title-color, $text-font, 1.8rem, 700);
@@ -163,16 +182,25 @@ header {
         background-image: url(../img/hamburger.png);
         margin: 18px auto;
         @include iconCenter;
+        @media screen and (max-width: 768px) {
+            background-size: 60% 60%;
+        }
     }
     &__money {
         background-image: url(../img/money.png);
         margin: 18px auto;
         @include iconCenter;
+        @media screen and (max-width: 768px) {
+            background-size: 70% 50%;
+        }
     }
     &__cheef {
         background-image: url(../img/cheef.png);
         margin: 18px auto;
         @include iconCenter;
+        @media screen and (max-width: 768px) {
+            background-size: 60% 60%;
+        }
     }
     .span-title {
         font-weight: bold;
@@ -188,6 +216,10 @@ header {
     p {
         font-weight: 300;
         padding-bottom: 90px;
+        @media screen and (max-width: 768px) {
+            width: 70%;
+            margin: auto;
+        }
     }
 }
 // ____________________________________________S-E-C-O-N-D____S-E-C-T-I-O-N___________________________________________
@@ -198,6 +230,20 @@ header {
     // position: relative;
     @media screen and (max-width: 1024px) {
         min-height: 715px;
+    }
+    // @media screen and (max-width: 768px) {
+    //     min-height: 690px;
+    //     // position: absolute;
+    // }
+    p {
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            // margin-left: 40%;
+            // width: 500px;
+            // display: inline-block;
+            // width: 150%;
+            text-align: left;
+        }
     }
     &__phone {
         background-image: url(../img/phone.png);
@@ -215,12 +261,39 @@ header {
         @media screen and (max-width: 1024px) {
             margin-top: 15.6%;
         }
+        @media screen and (max-width: 768px) {
+            // height: 900px;
+            float: left;
+            height: 370px;
+            margin-right: 60px;
+            margin-top: 15%;
+            // position: absolute;
+            // top: 315%;
+            // border-bottom: 5px dashed salmon;
+            // width: 40%;
+            margin-bottom: 5px;
+            border-bottom: 5px solid $brand-color;
+            border-radius: 10px;
+            // border-width: 80%;
+            // &::after {
+            //     content: '';
+            //     display: inline-block;
+            //     width: 100%;
+            //     // padding-bottom: 2px;
+            //     // margin-bottom: 50px;
+            //     border-bottom: 5px solid $brand-color;
+            //     margin: 100% auto;
+            // }
+        }
     }
     &__about {
         padding-top: 25%;
         margin-left: 100px;
         @media screen and (max-width: 1024px) {
             padding-top: 15%;
+        }
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
         }
         .span-title {
             font-weight: bold;
@@ -231,6 +304,9 @@ header {
                 padding: 2px;
                 border-bottom: 2px solid $brand-color;
                 margin: 0 0 0 44%;
+                @media screen and (max-width: 768px) {
+                    margin-left: 49%;
+                }
             }
         }
     }
@@ -239,9 +315,13 @@ header {
         margin-left: 43.5%;
         width: 270px;
         display: flex;
+        // outline: 2px solid green;
         // justify-content: space-between;
         // outline: 2px dashed green;
         // outline: 2px dashed orange;
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
     }
     &__store {
         background-image: url(../img/Layer_3.png);
@@ -291,10 +371,15 @@ header {
     font-size: 3rem;
     text-align: center;
     line-height: 3.6rem;
+    @media screen and (max-width: 768px) {
+        min-height: 420px;
+    }
     &__container {
         padding-top: 80px;
+        @media screen and (max-width: 768px) {
+            padding-top: 40px;
+        }
     }
-
     &__commentator {
         background: url(../img/commentator.jpg) no-repeat center;
         height: 10rem;
@@ -329,7 +414,7 @@ header {
     & span {
         display: block;
         @media screen and (max-width: 1024px) {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -422,7 +507,7 @@ header {
         font-style: italic;
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.5rem;
-        // padding: 30px;
+        // padding-top: 30px;
         &:hover,
         &:focus,
         &:active {
@@ -436,6 +521,9 @@ header {
             font-size: 3.6rem;
             letter-spacing: 2px;
             line-height: 4rem;
+            @media screen and (max-width: 768px) {
+                font-size: 3rem;
+            }
         }
     }
     &__choise {
@@ -445,18 +533,34 @@ header {
         height: 444px;
         width: 100%;
         margin-top: 38px;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: 800px;
+        }
     }
-    &__choise a {
+    &__link {
         text-decoration: none;
         color: #fff;
         position: absolute;
         @include posCenter;
-        padding: 77px 59px;
-        // padding: 30%;
+        // padding: 70px auto;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-top: 22%;
+        // @media screen and (max-width: 768px) {
+        //     padding-top: 10%;
+        // }
         &:hover,
         &:focus,
         &:active {
             color: black;
+        }
+        &--american {
+            @media screen and (max-width: 768px) {
+                padding-top: 8%;
+            }
         }
     }
     &__italian {
@@ -465,6 +569,10 @@ header {
         grid-row: 1 / 2;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -483,6 +591,10 @@ header {
         grid-row: 1 / 2;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -500,6 +612,10 @@ header {
         grid-row: 1 / 2;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -517,6 +633,10 @@ header {
         grid-row: 1 / 2;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -534,6 +654,10 @@ header {
         grid-row: 1 / 2;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -550,6 +674,10 @@ header {
         grid-row: 2 / 3;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -566,6 +694,10 @@ header {
         grid-row: 2 / 3;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -582,6 +714,10 @@ header {
         grid-row: 2 / 3;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -598,6 +734,10 @@ header {
         grid-row: 2 / 3;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -614,6 +754,12 @@ header {
         grid-row: 2 / 3;
         position: relative;
         transition: all .3s linear;
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -629,6 +775,9 @@ header {
 .stat {
     // outline: 2px solid green;
     margin-top: 6rem;
+    @media screen and (max-width: 768px) {
+        margin-top: 4rem;
+    }
     &__list {
         list-style: none;
         display: flex;
@@ -637,6 +786,9 @@ header {
         align-content: center;
         padding: 0;
         margin: 0;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 3rem;
+        }
     }
     // &__item {
     //     // align-self: center;
@@ -649,12 +801,18 @@ header {
         font-size: 3.6rem;
         letter-spacing: 2px;
         line-height: 3rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2.5rem;
+        }
     }
     &__text {
         font-weight: 300;
         font-family: 'Lato', Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
         line-height: 1.8rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -670,6 +828,9 @@ footer {
     // align-content: center;
     // outline: 2px dashed green;
     padding-top: 3%;
+    @media screen and (max-width: 768px) {
+        padding-top: 5%;
+    }
     &__link {
         text-decoration: none;
         color: #8b8b8b;

@@ -407,6 +407,9 @@ body {
   @media screen and (max-width: 1024px) {
     .container {
       width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 85%; } }
 
 /*__________________________________-HEADER-______________________________________*/
 header {
@@ -449,6 +452,9 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      width: 30%; } }
   .menu__link {
     color: #fff;
     font-family: "Lato", sans-serif;
@@ -497,6 +503,9 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .title {
+      height: 500px; } }
   .title__text {
     color: #fff;
     font-family: "Times New Roman", sans-serif;
@@ -507,6 +516,10 @@ header {
     font-style: italic;
     letter-spacing: 2px;
     margin: 26.5rem 0 0 0; }
+    @media screen and (max-width: 768px) {
+      .title__text {
+        margin-top: 10rem;
+        font-size: 3rem; } }
   .title__main {
     color: #fff;
     font-family: "Lato", sans-serif;
@@ -515,6 +528,9 @@ header {
     line-height: 1.7;
     letter-spacing: 5px;
     margin: 0; }
+    @media screen and (max-width: 768px) {
+      .title__main {
+        font-size: 8rem; } }
   .title__btn {
     color: #fff;
     font-family: "Lato", sans-serif;
@@ -573,6 +589,9 @@ header {
     padding: 15%;
     width: 60px;
     height: 60px; }
+    @media screen and (max-width: 768px) {
+      .about__hamburger {
+        background-size: 60% 60%; } }
   .about__money {
     background-image: url(../img/money.png);
     margin: 18px auto;
@@ -583,6 +602,9 @@ header {
     padding: 15%;
     width: 60px;
     height: 60px; }
+    @media screen and (max-width: 768px) {
+      .about__money {
+        background-size: 70% 50%; } }
   .about__cheef {
     background-image: url(../img/cheef.png);
     margin: 18px auto;
@@ -593,6 +615,9 @@ header {
     padding: 15%;
     width: 60px;
     height: 60px; }
+    @media screen and (max-width: 768px) {
+      .about__cheef {
+        background-size: 60% 60%; } }
   .about .span-title {
     font-weight: bold; }
     .about .span-title::after {
@@ -605,6 +630,10 @@ header {
   .about p {
     font-weight: 300;
     padding-bottom: 90px; }
+    @media screen and (max-width: 768px) {
+      .about p {
+        width: 70%;
+        margin: auto; } }
 
 .app {
   min-height: 880px;
@@ -612,6 +641,10 @@ header {
   @media screen and (max-width: 1024px) {
     .app {
       min-height: 715px; } }
+  @media screen and (max-width: 768px) {
+    .app p {
+      font-size: 1.5rem;
+      text-align: left; } }
   .app__phone {
     background-image: url(../img/phone.png);
     height: 780px;
@@ -625,12 +658,24 @@ header {
     @media screen and (max-width: 1024px) {
       .app__phone {
         margin-top: 15.6%; } }
+    @media screen and (max-width: 768px) {
+      .app__phone {
+        float: left;
+        height: 370px;
+        margin-right: 60px;
+        margin-top: 15%;
+        margin-bottom: 5px;
+        border-bottom: 5px solid salmon;
+        border-radius: 10px; } }
   .app__about {
     padding-top: 25%;
     margin-left: 100px; }
     @media screen and (max-width: 1024px) {
       .app__about {
         padding-top: 15%; } }
+    @media screen and (max-width: 768px) {
+      .app__about {
+        margin-left: 0; } }
     .app__about .span-title {
       font-weight: bold; }
       .app__about .span-title::after {
@@ -640,6 +685,9 @@ header {
         padding: 2px;
         border-bottom: 2px solid salmon;
         margin: 0 0 0 44%; }
+        @media screen and (max-width: 768px) {
+          .app__about .span-title::after {
+            margin-left: 49%; } }
   .app__stores {
     height: 38px;
     margin-left: 43.5%;
@@ -647,6 +695,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 768px) {
+      .app__stores {
+        margin: 0 auto; } }
   .app__store {
     background-image: url(../img/Layer_3.png);
     height: 38px;
@@ -690,8 +741,14 @@ header {
   font-size: 3rem;
   text-align: center;
   line-height: 3.6rem; }
+  @media screen and (max-width: 768px) {
+    .view {
+      min-height: 420px; } }
   .view__container {
     padding-top: 80px; }
+    @media screen and (max-width: 768px) {
+      .view__container {
+        padding-top: 40px; } }
   .view__commentator {
     background: url(../img/commentator.jpg) no-repeat center;
     height: 10rem;
@@ -719,7 +776,7 @@ header {
     display: block; }
     @media screen and (max-width: 1024px) {
       .view span {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
   .view .span-title {
     font-style: italic;
     font-family: 'Lato', sans-serif;
@@ -811,6 +868,9 @@ header {
       font-size: 3.6rem;
       letter-spacing: 2px;
       line-height: 4rem; }
+      @media screen and (max-width: 768px) {
+        .cuisines__text--bold {
+          font-size: 3rem; } }
   .cuisines__choise {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -818,7 +878,12 @@ header {
     height: 444px;
     width: 100%;
     margin-top: 38px; }
-  .cuisines__choise a {
+    @media screen and (max-width: 768px) {
+      .cuisines__choise {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 800px; } }
+  .cuisines__link {
     text-decoration: none;
     color: #fff;
     position: absolute;
@@ -829,9 +894,15 @@ header {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 77px 59px; }
-    .cuisines__choise a:hover, .cuisines__choise a:focus, .cuisines__choise a:active {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 22%; }
+    .cuisines__link:hover, .cuisines__link:focus, .cuisines__link:active {
       color: black; }
+    @media screen and (max-width: 768px) {
+      .cuisines__link--american {
+        padding-top: 8%; } }
   .cuisines__italian {
     background-image: url(../img/italian.png);
     grid-column: 1 / 2;
@@ -840,6 +911,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__italian {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; } }
     .cuisines__italian:hover, .cuisines__italian:focus, .cuisines__italian:active {
       background-image: url(../img/flags/italianFlag.jpg);
       background-size: 100% 100%;
@@ -856,6 +931,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__indian {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; } }
     .cuisines__indian:hover, .cuisines__indian:focus, .cuisines__indian:active {
       background-image: url(../img/flags/indianFlag.png);
       background-size: 100% 100%;
@@ -872,6 +951,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__french {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; } }
     .cuisines__french:hover, .cuisines__french:focus, .cuisines__french:active {
       background-image: url(../img/flags/frenchFlag.jpg);
       background-size: 100% 100%;
@@ -888,6 +971,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__steakhouse {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; } }
     .cuisines__steakhouse:hover, .cuisines__steakhouse:focus, .cuisines__steakhouse:active {
       background-image: url(../img/flags/steakhouseFlag.jpg);
       background-size: 100% 100%;
@@ -904,6 +991,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__seafood {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; } }
     .cuisines__seafood:hover, .cuisines__seafood:focus, .cuisines__seafood:active {
       background-image: url(../img/flags/seafoodFlag.jpg);
       background-size: 100% 100%;
@@ -920,6 +1011,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__sushi {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; } }
     .cuisines__sushi:hover, .cuisines__sushi:focus, .cuisines__sushi:active {
       background-image: url(../img/flags/japanFlag.webp);
       background-size: 100% 100%;
@@ -936,6 +1031,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__mexican {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; } }
     .cuisines__mexican:hover, .cuisines__mexican:focus, .cuisines__mexican:active {
       background-image: url(../img/flags/mexicanFlag.png);
       background-size: 100% 100%;
@@ -952,6 +1051,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__chinese {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4; } }
     .cuisines__chinese:hover, .cuisines__chinese:focus, .cuisines__chinese:active {
       background-image: url(../img/flags/chineseFlag.jpeg);
       background-size: 100% 100%;
@@ -968,6 +1071,10 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__pizza {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4; } }
     .cuisines__pizza:hover, .cuisines__pizza:focus, .cuisines__pizza:active {
       background-image: url(../img/flags/pizzaFlag.svg);
       background-size: 100% 100%;
@@ -984,6 +1091,12 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+    @media screen and (max-width: 768px) {
+      .cuisines__american {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        background-repeat: no-repeat;
+        background-size: cover; } }
     .cuisines__american:hover, .cuisines__american:focus, .cuisines__american:active {
       background-image: url(../img/flags/americanFlag.webp);
       background-size: 100% 100%;
@@ -995,6 +1108,9 @@ header {
 
 .stat {
   margin-top: 6rem; }
+  @media screen and (max-width: 768px) {
+    .stat {
+      margin-top: 4rem; } }
   .stat__list {
     list-style: none;
     display: -webkit-box;
@@ -1007,6 +1123,9 @@ header {
     align-content: center;
     padding: 0;
     margin: 0; }
+    @media screen and (max-width: 768px) {
+      .stat__list {
+        padding-bottom: 3rem; } }
   .stat__num {
     font-weight: bold;
     font-family: serif;
@@ -1015,11 +1134,17 @@ header {
     font-size: 3.6rem;
     letter-spacing: 2px;
     line-height: 3rem; }
+    @media screen and (max-width: 768px) {
+      .stat__num {
+        font-size: 2.5rem; } }
   .stat__text {
     font-weight: 300;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     line-height: 1.8rem; }
+    @media screen and (max-width: 768px) {
+      .stat__text {
+        font-size: 1.5rem; } }
 
 footer {
   min-height: 92px;
@@ -1033,6 +1158,9 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 3%; }
+  @media screen and (max-width: 768px) {
+    .bottom {
+      padding-top: 5%; } }
   .bottom__link {
     text-decoration: none;
     color: #8b8b8b;
