@@ -663,5 +663,8 @@ footer {
                 display: inline-block;
             }
         }
+        &--second:hover:after {
+            color: salmon;
+        }
     }
 }

@@ -1028,3 +1028,5 @@ footer {
         color: #000;
         font-weight: bold;
         display: inline-block; }
+    .bottom__link--second:hover:after {
+      color: salmon; }
