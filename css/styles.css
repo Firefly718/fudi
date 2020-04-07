@@ -388,6 +388,12 @@ html {
   @media screen and (max-width: 1024px) {
     html {
       overflow-x: hidden; } }
+  @media screen and (max-width: 768px) {
+    html {
+      overflow-x: hidden; } }
+  @media screen and (max-width: 425px) {
+    html {
+      overflow-x: hidden; } }
 
 body {
   min-height: 100%;
