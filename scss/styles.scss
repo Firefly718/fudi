@@ -289,6 +289,12 @@ header {
         @media screen and (max-width: 768px) {
             background-size: 60% 60%;
         }
+        @media screen and (max-width: 425px) {
+            background-size: 55% 55%;
+            padding: 10%;
+            // width: 4rem;
+            // height: 4rem;
+        }
     }
     &__money {
         background-image: url(../img/money.png);
@@ -297,6 +303,12 @@ header {
         @media screen and (max-width: 768px) {
             background-size: 70% 50%;
         }
+        @media screen and (max-width: 425px) {
+            background-size: 65% 45%;
+            padding: 10%;
+            // width: 4rem;
+            // height: 4rem;
+        }
     }
     &__cheef {
         background-image: url(../img/cheef.png);
@@ -304,6 +316,12 @@ header {
         @include iconCenter;
         @media screen and (max-width: 768px) {
             background-size: 60% 60%;
+        }
+        @media screen and (max-width: 425px) {
+            background-size: 55% 55%;
+            padding: 10%;
+            // width: 4rem;
+            // height: 4rem;
         }
     }
     .span-title {
