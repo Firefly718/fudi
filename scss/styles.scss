@@ -270,6 +270,7 @@ header {
         display: flex;
         text-align: center;
         padding-top: 82px;
+        // @media screen and (max-width: 425px) {}
     }
     &__item {
         width: 364px;
