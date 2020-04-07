@@ -958,6 +958,9 @@ header {
   background-color: #fff;
   text-align: center;
   padding-top: 100px; }
+  @media screen and (max-width: 425px) {
+    .cuisines {
+      padding-top: 6rem; } }
   .cuisines .span-title {
     font-weight: bold; }
     .cuisines .span-title::after {
@@ -967,6 +970,10 @@ header {
       padding-top: 2px;
       border-bottom: 2px solid salmon;
       margin: 0 0 0 48%; }
+      @media screen and (max-width: 425px) {
+        .cuisines .span-title::after {
+          width: 25%;
+          margin: 0 auto; } }
   .cuisines__text {
     text-decoration: none;
     color: #fff;
@@ -998,6 +1005,11 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         height: 800px; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__choise {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 1000px; } }
   .cuisines__link {
     text-decoration: none;
     color: #fff;
@@ -1013,11 +1025,17 @@ header {
     height: 100%;
     display: block;
     padding-top: 22%; }
+    @media screen and (max-width: 425px) {
+      .cuisines__link {
+        padding-top: 25%; } }
     .cuisines__link:hover, .cuisines__link:focus, .cuisines__link:active {
       color: black; }
     @media screen and (max-width: 768px) {
       .cuisines__link--american {
         padding-top: 8%; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__link--american {
+        padding-top: 25%; } }
   .cuisines__italian {
     background-image: url(../img/italian.png);
     grid-column: 1 / 2;
@@ -1027,6 +1045,10 @@ header {
     -o-transition: all .3s linear;
     transition: all .3s linear; }
     @media screen and (max-width: 768px) {
+      .cuisines__italian {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; } }
+    @media screen and (max-width: 425px) {
       .cuisines__italian {
         grid-column: 1 / 2;
         grid-row: 1 / 2; } }
@@ -1050,6 +1072,10 @@ header {
       .cuisines__indian {
         grid-column: 2 / 3;
         grid-row: 1 / 2; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__indian {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; } }
     .cuisines__indian:hover, .cuisines__indian:focus, .cuisines__indian:active {
       background-image: url(../img/flags/indianFlag.png);
       background-size: 100% 100%;
@@ -1070,6 +1096,10 @@ header {
       .cuisines__french {
         grid-column: 3 / 4;
         grid-row: 1 / 2; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__french {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; } }
     .cuisines__french:hover, .cuisines__french:focus, .cuisines__french:active {
       background-image: url(../img/flags/frenchFlag.jpg);
       background-size: 100% 100%;
@@ -1089,6 +1119,10 @@ header {
     @media screen and (max-width: 768px) {
       .cuisines__steakhouse {
         grid-column: 1 / 2;
+        grid-row: 2 / 3; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__steakhouse {
+        grid-column: 2 / 3;
         grid-row: 2 / 3; } }
     .cuisines__steakhouse:hover, .cuisines__steakhouse:focus, .cuisines__steakhouse:active {
       background-image: url(../img/flags/steakhouseFlag.jpg);
@@ -1110,6 +1144,10 @@ header {
       .cuisines__seafood {
         grid-column: 2 / 3;
         grid-row: 2 / 3; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__seafood {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; } }
     .cuisines__seafood:hover, .cuisines__seafood:focus, .cuisines__seafood:active {
       background-image: url(../img/flags/seafoodFlag.jpg);
       background-size: 100% 100%;
@@ -1130,6 +1168,10 @@ header {
       .cuisines__sushi {
         grid-column: 3 / 4;
         grid-row: 2 / 3; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__sushi {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4; } }
     .cuisines__sushi:hover, .cuisines__sushi:focus, .cuisines__sushi:active {
       background-image: url(../img/flags/japanFlag.webp);
       background-size: 100% 100%;
@@ -1150,6 +1192,10 @@ header {
       .cuisines__mexican {
         grid-column: 1 / 2;
         grid-row: 3 / 4; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__mexican {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5; } }
     .cuisines__mexican:hover, .cuisines__mexican:focus, .cuisines__mexican:active {
       background-image: url(../img/flags/mexicanFlag.png);
       background-size: 100% 100%;
@@ -1170,6 +1216,10 @@ header {
       .cuisines__chinese {
         grid-column: 2 / 3;
         grid-row: 3 / 4; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__chinese {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5; } }
     .cuisines__chinese:hover, .cuisines__chinese:focus, .cuisines__chinese:active {
       background-image: url(../img/flags/chineseFlag.jpeg);
       background-size: 100% 100%;
@@ -1190,6 +1240,10 @@ header {
       .cuisines__pizza {
         grid-column: 3 / 4;
         grid-row: 3 / 4; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__pizza {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6; } }
     .cuisines__pizza:hover, .cuisines__pizza:focus, .cuisines__pizza:active {
       background-image: url(../img/flags/pizzaFlag.svg);
       background-size: 100% 100%;
@@ -1212,6 +1266,10 @@ header {
         grid-row: 4 / 5;
         background-repeat: no-repeat;
         background-size: cover; } }
+    @media screen and (max-width: 425px) {
+      .cuisines__american {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6; } }
     .cuisines__american:hover, .cuisines__american:focus, .cuisines__american:active {
       background-image: url(../img/flags/americanFlag.webp);
       background-size: 100% 100%;
