@@ -583,12 +583,19 @@ header {
             // text-align: center;
             display: inline-block;
         }
+        @media screen and (max-width: 425px) {
+            font-size: 2rem;
+            margin: 2rem 0 2rem 0;
+        }
     }
 
     & span {
         display: block;
         @media screen and (max-width: 1024px) {
             font-size: 2.5rem;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 2rem;
         }
     }
 
@@ -631,6 +638,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 425px) {
+            margin-top: 1.5rem;
+        }
         &__dot {
             margin: 0 5px;
             list-style: none;

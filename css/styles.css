@@ -877,11 +877,18 @@ header {
       .view blockquote {
         font-size: 2.5rem;
         display: inline-block; } }
+    @media screen and (max-width: 425px) {
+      .view blockquote {
+        font-size: 2rem;
+        margin: 2rem 0 2rem 0; } }
   .view span {
     display: block; }
     @media screen and (max-width: 1024px) {
       .view span {
         font-size: 2.5rem; } }
+    @media screen and (max-width: 425px) {
+      .view span {
+        font-size: 2rem; } }
   .view .span-title {
     font-style: italic;
     font-family: 'Lato', sans-serif;
@@ -917,6 +924,9 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media screen and (max-width: 425px) {
+      .view .slider {
+        margin-top: 1.5rem; } }
     .view .slider__dot {
       margin: 0 5px;
       list-style: none;
