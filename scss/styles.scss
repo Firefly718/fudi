@@ -45,7 +45,10 @@ body {
         width: 85%;
     }
     @media screen and (max-width: 425px) {
-        width: 82%;
+        width: 86%;
+    }
+    @media screen and (max-width: 375px) {
+        width: 90%;
     }
 }
 /*__________________________________-HEADER-______________________________________*/
@@ -290,6 +293,9 @@ header {
         // @media screen and (max-width: 425px) {
         //     // width: 100%;
         // }
+        @media screen and (max-width: 375px) {
+            width: 100%;
+        }
     }
     &__hamburger {
         background-image: url(../img/hamburger.png);
@@ -387,6 +393,12 @@ header {
             // width: 150%;
             text-align: left;
         }
+        @media screen and (max-width: 425px) {
+            text-align: justify;
+        }
+        @media screen and (max-width: 375px) {
+            text-align: justify;
+        }
     }
     &__phone {
         background-image: url(../img/phone.png);
@@ -440,6 +452,10 @@ header {
             left: 15%;
             // bottom: 50%;
             width: 66%;
+        }
+        @media screen and (max-width: 375px) {
+            top: 58%;
+            height: 358px;
         }
     }
     &__about {
@@ -513,6 +529,9 @@ header {
             // padding-right: 0;
             width: 40%;
         }
+        // @media screen and (max-width: 375px) {
+        //     width: ;
+        // }
         @include tr();
             &:hover,
             &:focus,
@@ -542,6 +561,9 @@ header {
                 // align-self: end;
                 // background-color: transparent;
                 width: 43%;
+            }
+            @media screen and (max-width: 375px) {
+                margin-right: 5%;
             }
             @include tr();
             &:hover,
@@ -614,6 +636,7 @@ header {
             font-size: 2rem;
             margin: 2rem 0 2rem 0;
         }
+        // @media screen and (max-width: 375px) {}
     }
 
     & span {
@@ -1085,6 +1108,12 @@ header {
             // align-items: stretch;
         }
     }
+    &__item:first-child {
+        padding-left: 0;
+    }
+    &__item:nth-last-child(1) {
+        padding-right: 0;
+    }
     &__num {
         font-weight: bold;
         font-family: serif;
@@ -1101,6 +1130,9 @@ header {
             // padding: 0 10px;
             padding-top: 2rem;
         }
+        // @media screen and (max-width: 375px) {
+        //     font-size: ;
+        // }
     }
     &__text {
         font-weight: 300;
@@ -1141,6 +1173,9 @@ footer {
         font-weight: 300;
         @media screen and (max-width: 425px) {
             font-size: 1.1rem;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 1.15rem;
         }
         &--second {
             color: #8b8b8b;

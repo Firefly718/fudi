@@ -394,6 +394,9 @@ html {
   @media screen and (max-width: 425px) {
     html {
       overflow-x: hidden; } }
+  @media screen and (max-width: 375px) {
+    html {
+      overflow-x: hidden; } }
 
 body {
   min-height: 100%;
@@ -418,7 +421,10 @@ body {
       width: 85%; } }
   @media screen and (max-width: 425px) {
     .container {
-      width: 82%; } }
+      width: 86%; } }
+  @media screen and (max-width: 375px) {
+    .container {
+      width: 90%; } }
 
 /*__________________________________-HEADER-______________________________________*/
 header {
@@ -631,6 +637,9 @@ header {
   .about__item {
     width: 364px;
     color: #000; }
+    @media screen and (max-width: 375px) {
+      .about__item {
+        width: 100%; } }
   .about__hamburger {
     background-image: url(../img/hamburger.png);
     margin: 18px auto;
@@ -721,6 +730,12 @@ header {
     .app p {
       font-size: 1.5rem;
       text-align: left; } }
+  @media screen and (max-width: 425px) {
+    .app p {
+      text-align: justify; } }
+  @media screen and (max-width: 375px) {
+    .app p {
+      text-align: justify; } }
   .app__phone {
     background-image: url(../img/phone.png);
     height: 780px;
@@ -752,6 +767,10 @@ header {
         top: 52%;
         left: 15%;
         width: 66%; } }
+    @media screen and (max-width: 375px) {
+      .app__phone {
+        top: 58%;
+        height: 358px; } }
   .app__about {
     padding-top: 25%;
     margin-left: 100px; }
@@ -839,6 +858,9 @@ header {
           margin: 0;
           padding: 0;
           width: 43%; } }
+      @media screen and (max-width: 375px) {
+        .app__store--google {
+          margin-right: 5%; } }
       .app__store--google:hover, .app__store--google:focus, .app__store--google:active {
         -webkit-box-shadow: inset 0px 0px 0px 2px rgba(63, 63, 63, 0.75);
         box-shadow: inset 0px 0px 0px 2px rgba(63, 63, 63, 0.75);
@@ -1332,6 +1354,10 @@ header {
   @media screen and (max-width: 425px) {
     .stat__item:nth-child(2n) {
       width: 50%; } }
+  .stat__item:first-child {
+    padding-left: 0; }
+  .stat__item:nth-last-child(1) {
+    padding-right: 0; }
   .stat__num {
     font-weight: bold;
     font-family: serif;
@@ -1385,6 +1411,9 @@ footer {
     @media screen and (max-width: 425px) {
       .bottom__link {
         font-size: 1.1rem; } }
+    @media screen and (max-width: 375px) {
+      .bottom__link {
+        font-size: 1.15rem; } }
     .bottom__link--second {
       color: #8b8b8b;
       text-decoration: none;
