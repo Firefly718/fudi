@@ -797,6 +797,9 @@ header {
         top: 52%;
         left: 15%;
         width: 66%; } }
+    @media screen and (max-width: 403px) {
+      .app__phone {
+        height: 34.8%; } }
     @media screen and (max-width: 375px) {
       .app__phone {
         top: 58%;
