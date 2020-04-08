@@ -53,9 +53,9 @@ header {
     @include bgCenter;
     background-size: 100% 100%;
     @media screen and (max-width: 425px) {
-        background-size: 100% 60%;
+        background-size: 100% 65%;
         background-color: #5a2424;
-        max-height: 100vh;
+        // max-height: 100vh;
         // #aa8b73 -> rosybrown
         // #a17d6b -> gray
         // min-height: 300px;
@@ -250,7 +250,7 @@ header {
         @include text($title-color, $text-font, 1.4rem, 400);
         margin-bottom: 240px;
         @media screen and (max-width: 425px) {
-            margin-top: 2.5rem;
+            margin-top: 7rem;
         }
         & a {
         font-weight: 700;
