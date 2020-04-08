@@ -66,6 +66,9 @@ header {
         // #a17d6b -> gray
         // min-height: 300px;
     }
+    @media screen and (max-width: 320px) {
+        background-size: 100% 70%;
+    }
 }
 
 .nav {
@@ -94,6 +97,9 @@ header {
         @media screen and (max-width: 425px) {
             width: 70px;
         }
+        @media screen and (max-width: 320px) {
+            width: 60px;
+        }
         @include tr();
         &:hover,
         &:focus,
@@ -116,6 +122,9 @@ header {
         @media screen and (max-width: 425px) {
             width: 70%;
         }
+        @media screen and (max-width: 320px) {
+            width: 65%;
+        }
     }
     &__link {
         @include text($title-color, $text-font, 1.4rem/3rem, 700);
@@ -123,6 +132,9 @@ header {
         display: inline-block;
         @media screen and (max-width: 425px) {
             font-size: 1.8rem;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 1.5rem;
         }
         &--burger{
             @include text($title-color, $text-font, 1.4rem/3rem, 700);
@@ -135,6 +147,9 @@ header {
                 // text-align: right;
                 // height: 5%;
                 
+            }
+            @media screen and (max-width: 320px) {
+                margin-right: 3%;
             }
             @include tr();
             &:hover,
@@ -219,6 +234,10 @@ header {
         @media screen and (max-width: 425px) {
             margin-top: 8rem;
         }
+        @media screen and (max-width: 320px) {
+            font-size: 2rem;
+            margin-top: 13rem;
+        }
     }
     &__main {
         @include text($title-color, $text-font, 10rem, 700);
@@ -229,6 +248,9 @@ header {
         }
         @media screen and (max-width: 425px) {
             font-size: 7rem;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 5rem;
         }
     }
     &__btn {
@@ -244,6 +266,9 @@ header {
             font-size: 2rem;
             margin-bottom: 1rem;
         }
+        @media screen and (max-width: 320px) {
+            margin-top: 4rem;
+        }
         @include tr();
             &:hover,
             &:focus,
@@ -256,6 +281,11 @@ header {
         @include text($title-color, $text-font, 1.4rem, 400);
         margin-bottom: 240px;
         @media screen and (max-width: 425px) {
+            margin-top: 7rem;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: 320px) {
+            margin-bottom: 0;
             margin-top: 7rem;
         }
         & a {
@@ -457,6 +487,10 @@ header {
             top: 58%;
             height: 358px;
         }
+        @media screen and (max-width: 320px) {
+            top: 60%;
+            height: 305px;
+        }
     }
     &__about {
         padding-top: 25%;
@@ -510,7 +544,13 @@ header {
             // margin-left: 1px;
             margin-right: auto;
             margin-left: auto;
-            
+        }
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            height: 90px;
+            margin-top: 120%;
         }
     }
     &__store {
@@ -531,6 +571,10 @@ header {
         }
         // @media screen and (max-width: 375px) {
         //     width: ;
+        // }
+        // @media screen and (max-width: 320px) {
+        //     // margin-left: 3%;
+        //     // display: block;
         // }
         @include tr();
             &:hover,
@@ -565,6 +609,9 @@ header {
             @media screen and (max-width: 375px) {
                 margin-right: 5%;
             }
+            @media screen and (max-width: 320px) {
+                margin-right: 0;
+            }
             @include tr();
             &:hover,
             &:focus,
@@ -596,6 +643,9 @@ header {
     line-height: 3.6rem;
     @media screen and (max-width: 768px) {
         min-height: 420px;
+    }
+    @media screen and (max-width: 320px) {
+        min-height: 480px;
     }
     &__container {
         padding-top: 80px;
@@ -635,6 +685,9 @@ header {
         @media screen and (max-width: 425px) {
             font-size: 2rem;
             margin: 2rem 0 2rem 0;
+        }
+        @media screen and (max-width: 320px) {
+            margin: 2rem 0 3rem 0;
         }
         // @media screen and (max-width: 375px) {}
     }
@@ -691,6 +744,9 @@ header {
         @media screen and (max-width: 425px) {
             margin-top: 1.5rem;
         }
+        // @media screen and (max-width: 320px) {
+        //     margin-bottom: 1rem;
+        // }
         &__dot {
             margin: 0 5px;
             list-style: none;
@@ -765,6 +821,12 @@ header {
             @media screen and (max-width: 768px) {
                 font-size: 3rem;
             }
+            @media screen and (max-width: 375px) {
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: 320px) {
+                font-size: 2rem;
+            }
         }
     }
     &__choise {
@@ -783,6 +845,12 @@ header {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             height: 1000px;
+        }
+        @media screen and (max-width: 375px) {
+            height: 900px;
+        }
+        @media screen and (max-width: 320px) {
+            height: 800px;
         }
     }
     &__link {
@@ -829,6 +897,14 @@ header {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -855,6 +931,14 @@ header {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -879,6 +963,14 @@ header {
         @media screen and (max-width: 425px) {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
+        }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         &:hover,
         &:focus,
@@ -905,6 +997,14 @@ header {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -930,6 +1030,14 @@ header {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -953,6 +1061,14 @@ header {
         @media screen and (max-width: 425px) {
             grid-column: 2 / 3;
             grid-row: 3 / 4;
+        }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         &:hover,
         &:focus,
@@ -978,6 +1094,14 @@ header {
             grid-column: 1 / 2;
             grid-row: 4 / 5;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -1002,6 +1126,14 @@ header {
             grid-column: 2 / 3;
             grid-row: 4 / 5;
         }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -1025,6 +1157,14 @@ header {
         @media screen and (max-width: 425px) {
             grid-column: 1 / 2;
             grid-row: 5 / 6;
+        }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         &:hover,
         &:focus,
@@ -1051,6 +1191,14 @@ header {
         @media screen and (max-width: 425px) {
             grid-column: 2 / 3;
             grid-row: 5 / 6;
+        }
+        @media screen and (max-width: 375px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 320px) {
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         &:hover,
         &:focus,
@@ -1146,6 +1294,12 @@ header {
             font-size: 1.4rem;
             // padding: 0 1px;
         }
+        // @media screen and (max-width: 375px) {
+        //     line-height: 1.6rem;
+        // }
+        // @media screen and (max-width: 320px) {
+        //     line-height: 1rem;
+        // }
     }
 }
 
@@ -1163,6 +1317,9 @@ footer {
     padding-top: 3%;
     @media screen and (max-width: 768px) {
         padding-top: 5%;
+    }
+    @media screen and (max-width: 320px) {
+        padding-top: 9%;
     }
     &__link {
         text-decoration: none;
