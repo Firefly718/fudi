@@ -782,7 +782,7 @@ header {
     @media screen and (max-width: 768px) {
       .app__phone {
         float: left;
-        height: 370px;
+        height: 376px;
         margin-right: 60px;
         margin-top: 15%;
         margin-bottom: 5px;
@@ -791,7 +791,7 @@ header {
     @media screen and (max-width: 425px) {
       .app__phone {
         margin: 0;
-        height: 400px;
+        height: 36.5%;
         display: block;
         position: absolute;
         top: 52%;
@@ -800,11 +800,11 @@ header {
     @media screen and (max-width: 375px) {
       .app__phone {
         top: 58%;
-        height: 358px; } }
+        height: 32.5%; } }
     @media screen and (max-width: 320px) {
       .app__phone {
         top: 60%;
-        height: 305px; } }
+        height: 27.7%; } }
   .app__about {
     padding-top: 25%;
     margin-left: 100px; }

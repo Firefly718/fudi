@@ -449,7 +449,8 @@ header {
         @media screen and (max-width: 768px) {
             // height: 900px;
             float: left;
-            height: 370px;
+            height: 376px;
+            // height: 40%;
             margin-right: 60px;
             margin-top: 15%;
             // position: absolute;
@@ -475,7 +476,8 @@ header {
             // float: bottom;
             // border-bottom: none;
             // display: none;
-            height: 400px;
+            // height: 400px;
+            height: 36.5%;
             display: block;
             position: absolute;
             top: 52%;
@@ -485,11 +487,13 @@ header {
         }
         @media screen and (max-width: 375px) {
             top: 58%;
-            height: 358px;
+            // height: 358px;
+            height: 32.5%;
         }
         @media screen and (max-width: 320px) {
             top: 60%;
-            height: 305px;
+            // height: 305px;
+            height: 27.7%;
         }
     }
     &__about {
