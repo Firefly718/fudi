@@ -18,20 +18,27 @@
                 <div class="nav__menu">
                     <a class="nav__link" href="#">SIGN UP</a>
                     <a class="nav__link" href="#">LOG IN</a>
-                    <a class="nav__link--burger" href="#"><img class="nav__burger" src="./img/burger.png"></a>
+                    <img class="nav__burger" id="burger" src="./img/burger.png" alt="Menu">
                 </div>
             </nav>
+
+            <div id="bars" class="hide-bars">
+                <a class="bar" href="#about">About</a>
+                <a class="bar" href="#app">App</a>
+                <a class="bar" href="#view">View</a>
+                <a class="bar" href="#cuisines">Cuisines</a>
+            </div>
             
             <div class="title">
                 <h4 class="title__text">Find your favorite</h4>
                 <span class="title__main">RECIPES</span>
-                <a class="title__btn" href="#">GET STARTED</a>
-                <span class="title__subtitle">OR SEND US YOUR OWN RECIPES AND<a href="#">GET REWARDED!</a></span>
+                <a class="title__btn" href="#app">GET STARTED</a>
+                <span class="title__subtitle">OR SEND US YOUR OWN RECIPES AND<a href="#about">GET REWARDED!</a></span>
             </div>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__items">
                 <div class="about__item">
@@ -67,7 +74,7 @@
         </div>
     </section>
         
-    <section class="app">
+    <section class="app" id="app">
         <div class="container">
             <div class="app__phone"></div>
             <div class="app__about">
@@ -85,7 +92,7 @@
         </div>
     </section>
 
-    <section class="view">
+    <section class="view" id="view">
         <div class="container">
             <div class="view__container">
                 <a class="view__commentator" href="#"></a>
@@ -105,7 +112,7 @@
         </div>
     </section>
 
-    <section class="cuisines">
+    <section class="cuisines" id="cuisines">
         <span class="span-title">BROWSE BY CUISINES</span>
         <div class="cuisines__choise">
             <div class="cuisines__italian">
@@ -220,6 +227,7 @@
         </div>
     </footer>
 
+    <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
