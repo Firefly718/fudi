@@ -1,5 +1,5 @@
 //-------------------------------------------------------------Burger Menu
-var isMenuShow = false;
+var isMenuShow = false; // it's working
 
 burger.addEventListener("click", function() {
     if (isMenuShow) {
@@ -12,6 +12,31 @@ burger.addEventListener("click", function() {
         isMenuShow  = true;
     }
 });
+
+// second toggleBar (not working)
+// $('#burger').on('click', function(e) {
+//   e.preventDefault();
+
+//   $("#burger").attr("src","./img/burgerClose.png");
+
+//   $('#bars').toggleClass("active");
+// });
+
+// third toggleBar (not working)
+// burger.addEventListener("click", function() {
+//   document.getElementById("#burger").classList.toggle('active');
+// });
+
+// fourth toggleBar
+// window.onload = function() {
+//   document.querySelector('#burger')
+// }
+
+
+
+
+
+
 
 //-------------------------------------------------------------Slow Scroll
 const anchors = document.querySelectorAll('a[href*="#"]')

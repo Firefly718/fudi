@@ -126,6 +126,7 @@ header {
         width: 20px;
         height: 20spx;
         cursor: pointer;
+        // @include trBurger;
         @include hover {
                 transform: scale(1.2);
             }
@@ -134,7 +135,7 @@ header {
 //---------------------------------------------------Burger Menu
 #bars {
     display: none;
-    width: 14.5%;
+    width: 14%;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -144,7 +145,8 @@ header {
     flex-direction: column;
     font-size: 1.6rem;
     position: absolute;
-    left: 79.5%;
+    left: 90%;
+    // @include trBurger;
     @media screen and (max-width: 1024px) {
         width: 19.5%;
         left: 76.5%;
@@ -166,17 +168,21 @@ header {
     }
 }
 
+#bars.active {
+    display: flex;
+    // @include trBurger;
+}
 .bar {
     background-color: rgb(80, 33, 10);
-    padding: 1% 0;
+    padding: 1% 0 2% 8%;
     border-radius: 15px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 5px;
     width: 100%;
     display: inline-block;
-    text-align: center;
     border: 2px solid #000;
+    // @include trBurger;
     @media screen and (max-width: 425px) {
         height: 45px;
         padding: 1% 2%;

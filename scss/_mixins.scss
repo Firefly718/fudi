@@ -9,6 +9,9 @@
 @mixin tr {
     transition: all .3s ease-in;
 }
+@mixin trBurger {
+    transition: all 3s;
+}
 
 @mixin hover {
     @include tr();
